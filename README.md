@@ -33,7 +33,7 @@ Frequency=3215225 Hz, Resolution=311.0202 ns, Timer=TSC
   DefaultJob : Clr 4.0.30319.42000, 32bit LegacyJIT-v4.7.2053.0
 ```
 
-```
+
  |                 Method |  N |      Mean |     Error |    StdDev |       Min |       Max |  Gen 0 | Allocated |
  |----------------------- |--- |----------:|----------:|----------:|----------:|----------:|-------:|----------:|
  |        **LambdaFactorial** |  **3** | **14.707 ns** | **0.1897 ns** | **0.1775 ns** | **14.443 ns** | **15.023 ns** | **0.0140** |      **44 B** |
