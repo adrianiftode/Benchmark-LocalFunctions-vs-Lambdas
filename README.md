@@ -1,5 +1,7 @@
 # Benchmark LocalFunctions vs Lambdas
 
+Benchmark the statements in the following article https://docs.microsoft.com/en-us/dotnet/csharp/local-functions-vs-lambdas
+
 ````
  public static int LambdaFactorial(int n)
         {
@@ -20,7 +22,7 @@ vs
         }
 ````
 
-##Results
+## Results
 
 ``` ini
 
