@@ -4,13 +4,13 @@ using BenchmarkDotNet.Attributes.Exporters;
 
 namespace Benchmark
 {
-    [MinColumn, MaxColumn, MarkdownExporter]
+    [MinColumn, MaxColumn, MarkdownExporter, MemoryDiagnoser]
     public class LambdaVsLocalFunctions
     {
         private int n;
         public LambdaVsLocalFunctions()
         {
-            n = 6;
+            n = 10;
         }
         [Benchmark]
         public int LambdaFactorial() => Factorial.LambdaFactorial(n);

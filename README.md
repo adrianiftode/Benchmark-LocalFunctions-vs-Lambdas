@@ -20,6 +20,8 @@ vs
         }
 ````
 
+##Results
+
 ``` ini
 
 BenchmarkDotNet=v0.10.6, OS=Windows 10 Redstone 1 (10.0.14393)
@@ -30,10 +32,10 @@ Frequency=3215225 Hz, Resolution=311.0202 ns, Timer=TSC
 
 
 ```
- |                 Method |     Mean |     Error |    StdDev |
- |----------------------- |---------:|----------:|----------:|
- |        LambdaFactorial | 34.54 ns | 0.2510 ns | 0.2348 ns |
- | LocalFunctionFactorial | 17.26 ns | 0.1190 ns | 0.1113 ns |
+ |                 Method |     Mean |     Error |    StdDev |      Min |      Max |  Gen 0 | Allocated |
+ |----------------------- |---------:|----------:|----------:|---------:|---------:|-------:|----------:|
+ |        LambdaFactorial | 31.86 ns | 0.2249 ns | 0.2104 ns | 31.52 ns | 32.15 ns | 0.0139 |      44 B |
+ | LocalFunctionFactorial | 15.16 ns | 0.1195 ns | 0.1118 ns | 14.98 ns | 15.34 ns |      - |       0 B |
 
 
  Benchmarked with [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet)
