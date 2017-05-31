@@ -6,15 +6,12 @@ namespace Benchmark
 {
     [MinColumn, MaxColumn, MarkdownExporter, MemoryDiagnoser, RPlotExporter]
     public class LambdaVsLocalFunctions
-    {
-        private int n;
-        public LambdaVsLocalFunctions()
-        {
-            n = 10;
-        }
+    {   
+        [Params(3, 10, 20)]
+        public int N { get; set; }
         [Benchmark]
-        public int LambdaFactorial() => Factorial.LambdaFactorial(n);
+        public int LambdaFactorial() => Factorial.LambdaFactorial(N);
         [Benchmark]
-        public int LocalFunctionFactorial() => Factorial.LocalFunctionFactorial(n);
+        public int LocalFunctionFactorial() => Factorial.LocalFunctionFactorial(N);
     }
 }
