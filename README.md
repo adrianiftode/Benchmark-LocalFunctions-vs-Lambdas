@@ -31,7 +31,7 @@ Processor=Intel Core i5-4590 CPU 3.30GHz (Haswell), ProcessorCount=4
 Frequency=3215225 Hz, Resolution=311.0202 ns, Timer=TSC
   [Host]     : Clr 4.0.30319.42000, 32bit LegacyJIT-v4.7.2053.0
   DefaultJob : Clr 4.0.30319.42000, 32bit LegacyJIT-v4.7.2053.0
-
+```
 
 ```
  |                 Method |  N |      Mean |     Error |    StdDev |       Min |       Max |  Gen 0 | Allocated |
@@ -42,7 +42,6 @@ Frequency=3215225 Hz, Resolution=311.0202 ns, Timer=TSC
  | LocalFunctionFactorial | 10 | 15.327 ns | 0.0622 ns | 0.0582 ns | 15.230 ns | 15.424 ns |      - |       0 B |
  |        **LambdaFactorial** | **20** | **62.756 ns** | **0.0966 ns** | **0.0698 ns** | **62.631 ns** | **62.878 ns** | **0.0139** |      **44 B** |
  | LocalFunctionFactorial | 20 | 37.762 ns | 0.2754 ns | 0.2576 ns | 37.210 ns | 38.106 ns |      - |       0 B |
-
 
 
  Benchmarked with [BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet)
