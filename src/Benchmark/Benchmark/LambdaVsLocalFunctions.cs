@@ -4,7 +4,7 @@ using BenchmarkDotNet.Attributes.Exporters;
 
 namespace Benchmark
 {
-    [MinColumn, MaxColumn, MarkdownExporter, MemoryDiagnoser]
+    [MinColumn, MaxColumn, MarkdownExporter, MemoryDiagnoser, RPlotExporter]
     public class LambdaVsLocalFunctions
     {
         private int n;
